@@ -167,13 +167,22 @@ html {
     gap: 25px;
 }
 
+.active_get_start {
+    display: none;
+}
+
+.get_start:hover > .active_get_start, .try_out:hover > .active_get_start {
+    transition: all 800ms ease-in-out;
+    display: inline !important;
+}
+
 .home_button button {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 0;
+    width: 20rem;
     font-size: 20px;
     font-weight: bold;
     border-radius: 12px;
     cursor: pointer;
-
 }
 
 .home_button .get_start {
@@ -415,12 +424,16 @@ html {
     cursor: pointer;
     padding: 2rem 0;
 }
-.qna .question .answer{
+
+.qna .question .answer {
     display: none;
-}.qna .qna-active .answer{
+}
+
+.qna .qna-active .answer {
     transition: all 800ms ease-in-out;
     display: block;
 }
+
 .qna .qna_container .question .heading {
     font-family: var(--outfit);
     font-size: 17px;
@@ -658,7 +671,8 @@ html {
 
 .potentials .head_container .try_out {
     margin-top: 2rem;
-    padding: 1rem 3rem;
+    padding: 1rem 0;
+    width: 20rem;
     font-size: 2.2rem;
     font-family: var(--outfit);
 
